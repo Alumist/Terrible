@@ -1,8 +1,9 @@
-<script lang="index.js">
+<script lang="ts">
   let wallet_address;
   let wallet_balance = 0;
   let button_submitted = false;
   let error = ``;
+  let resolve = 'data';
 </script>
 
 <div class="page">
@@ -33,6 +34,7 @@
       }
     }}
   >
+  
     click to get balance
   </div>
 
@@ -48,13 +50,12 @@
 </div>
 
 <style lang="scss">
-  .page {
-  }
+   .page {
+    background-color: adjust-hue($color: #2d6637, $degrees: 0);
+   };
 
   .page-button {
-    background-color: orange;
-    color: white;
-  }
+    background-color: rgb(165, 114, 55);
+    color: rgb(148, 64, 64);
+  };
 </style>
-
-<script src="main.js"></script>

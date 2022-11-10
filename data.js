@@ -1,15 +1,19 @@
 
 
+app.get(`/wallet_balance`, async (req, res) => {
+    let url = res 'https://your-api.herokuapp.com/get_wallet_balance';
+})
+
+app.post(`/wallet_address`, async (req, res) => {
+    res.send({PublicKey})
+})
+
+app.get(`/walletBalance`, async (req, res) => {
+    req.send({wallet_Balance})
+});
 
 
 
-
-
-
-app.get(`/`, (req, res) => {
-    res.send(`Olleatlas Sample API`);
-  });
-  
   // app.get("/scrape", async (req, res) => {
   //   let url = req.query.url;
   //   let page = await browser.newPage();
