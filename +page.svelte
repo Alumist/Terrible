@@ -45,3 +45,18 @@ class="page-button">
     
 </style>
 
+
+
+<script lang="ts">
+    const axios = require(`axios`);
+    let address = ``;
+    let balance = 0;
+  </script>
+  
+  <input type="text" bind:value={address} />
+  
+  <div on:click={async() => {
+    balance = (await axios.get(`${YOUR_BACKEND_URL}/get_wallet_balance/${address}`)).data;
+  }}>button text</div>
+  
+  <div>{balance.toFixed(2)} SOL</div>
